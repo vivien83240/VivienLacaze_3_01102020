@@ -23,4 +23,15 @@ a {
   color: black;
 }
 
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+header img {
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
