@@ -1,16 +1,26 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype');
+    
+    
+}
+
+
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'robotoregular', Arial, sans-serif;
     color: black;
     font-size: 1em;
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h2 {
-
+    font-family: 'robotoregular', Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -24,4 +34,8 @@ h4 {
 a{
     text-decoration: none;
     color: black;
+}
+
+address{
+    font-style: normal;
 }
