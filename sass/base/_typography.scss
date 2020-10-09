@@ -12,7 +12,12 @@
          url('../fonts/Roboto-Black-webfont.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'shrikhand';
+    src: url('../fonts/Shrikhand-Regular.otf') format('truetype');
+}
 
+/*////////////////////////////////////////////////////////////////////*/
 
 h1,h2 {
     font-family: 'robotoblack', Arial, sans-serif;
