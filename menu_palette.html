@@ -11,24 +11,25 @@
     <body>
 
     	<header>
-          <img src="public/images/logo/ohmyfood.svg" alt="logo de Ohmyfood"/>
+            <a href="index.html"<i class="fas fa-arrow-left"></i></a>
+            <img src="public/images/logo/ohmyfood.svg" alt="logo de Ohmyfood"/>
         </header>
 
-        <banner>
-            <img src="public/images/restaurants/la_palette_du_gout.jpg" alt="Photo de La Palette du goût" />
-        </banner>
+        <img class="img_header" src="public/images/restaurants/la_palette_du_gout.jpg" alt="Photo de La Palette du goût"/>
 
         <section class="menu">
-            <h1>La palette du gout</h1>
-            <i class="far fa-heart"></i>
+            <aside class="menu__title">
+                <h1>La palette du gout</h1>
+                <i class="far fa-heart"></i>
+            </aside>
 
             <article class="menu__ctn">
                 <ul>
-                    <li>
-                        <h3>Entrées</h3>
-                        <ul class="menu_ctn__block__plat">
+                    <li class="menu__ctn__block">
+                        <h4>ENTRÉES</h4>
+                        <ul class="menu__ctn__block__plat">
                             <li><h5>Fricassée d'escargot</h5></li>
-                            <li class="menu_ctn__block__plat__tarif"><h6>Au piment d'Espelette</h6> <p>25€</p></li>
+                            <li class="menu__ctn__block__plat__tarif"><h6>Au piment d'espelette</h6> <p>25€</p></li>
                         </ul>
                     </li>
 
@@ -69,7 +70,10 @@
                     23€  
                 </ul> 
             </article>
-            <button class="btn_degrade" onclick="window.location.href='#';">Commander</button>
+
+            <div class="menu__btn">
+                <button class="btn_degrade" onclick="window.location.href='#';">Commander</button>
+            </div>
         </section>
 
 
