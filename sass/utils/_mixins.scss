@@ -1,0 +1,12 @@
+$bloc-mods: (
+    grey: $colour-lightgrey,
+    lightpurple: lighten($colour-primary, 35%)
+);
+
+@mixin bloc-mods($map){
+    @each $mod, $val in $map{
+        &--#{$mod} {
+            background: $val;
+        }
+    }
+}
