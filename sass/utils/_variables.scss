@@ -7,3 +7,5 @@ $colour-white: #fff;
 $colour-lightgrey: #f6f6f6;
 $colour-grey: #eaeaea;
 $colour-darkgrey: #353535;
+
+$colour-degrade: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
