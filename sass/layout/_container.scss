@@ -74,8 +74,8 @@ address{
             }
         }
 
-        .fonctionnement__bloc--grey i{
-            color: grey;
+        .fonctionnement__bloc--lightgrey i{
+            color: #808080;
         }
         .fonctionnement__bloc--lightpurple i{
             color: $colour-primary;
@@ -157,33 +157,9 @@ address{
             }
         }
 
-        i{
-            font-size: 1.7em;
+        .ctn-heart{
             padding: 0 30px 0 0;
-            z-index: 9;
-            color: black;
-
-            &:hover {
-                cursor: pointer;
-                background: $colour-degrade;
-	            -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-
-                transform-origin: bottom;
-                animation: heart 600ms ease-in-out both; 
-            }
+            
         }
     }
-}
-
-
-@keyframes heart{
-
-    0% {
-		opacity: 0;
-	  }
-
-	100% {
-		opacity: 1;
-	  }
 }
