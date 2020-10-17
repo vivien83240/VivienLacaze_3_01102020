@@ -1,0 +1,16 @@
+
+.loader_ctn{
+    background: $colour-degrade no-repeat center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    p{
+        font-family: 'shrikhand', Arial, sans-serif;
+        font-size: 5vh;
+        color: $colour-white;
+        letter-spacing: 0.1px;
+    }
+    
+}
