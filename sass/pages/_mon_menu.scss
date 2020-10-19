@@ -55,7 +55,21 @@ section.img-banner{
                 //padding: 10px;
                 margin-bottom: 15px;
                 cursor: pointer;
-            }
+                overflow: hidden;
+
+                /*:hover + .plat_icon{
+
+                    transform: scaleX(1);
+               
+
+                    i{
+                        transform: translateX(0) rotate(0turn);
+                        
+                    }*/
+
+            
+                }
+                  
 
                 .plat_text{
                     padding: 10px;
@@ -85,19 +99,31 @@ section.img-banner{
                     }
                 }
 
-                .plat_icon{
+                /*.plat_icon{
                     background: $colour-accent;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 80px;
                     border-radius: 0 15px 15px 0;
+                    overflow: hidden;
+
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform 500ms ease-in-out;
+                    
 
                     i{
+                        display: inline-block;
                         color: $colour-white;
                         font-size: 1.4em;
+                        transform: translateX(250%) rotate(-1turn);
+                        
+                        transition: transform 500ms ease-out;
+                    
                     }
                 }
+            }*/
         }
 
     &__btn{
@@ -105,4 +131,25 @@ section.img-banner{
         margin-top: 40px;   
     }
 
+}
+
+
+@keyframes progress-fond-icon{
+    0% {
+        transform: scaleX(0);  
+    }
+    
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes progress-icon{
+    0% {
+        transform: translateX(0);  
+    }
+    
+    100% {
+        transform: translateX(1);
+    }
 }
