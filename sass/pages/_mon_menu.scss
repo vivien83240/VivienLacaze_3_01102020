@@ -49,7 +49,7 @@ section.img-banner{
             &__ctn{
                   
                 .plat{
-                    
+                    position: relative;
                     background: $colour-white;
                     border-radius: 15px;
                     box-shadow: 0px 3px 10px rgb(226, 225, 225);
@@ -65,64 +65,69 @@ section.img-banner{
     
                             i{
                                 transform: rotate(0turn);
-                                
                             }
                         }
-    
-                        .plat_text__tarif{
-                            transform: translateX(0);
+
+                        .plat_text__bloc{
+                            width: 80%;
                         }
                     }
             
                     ul{
-
                         display: flex;
                         justify-content: space-between;
+                        
 
                         .plat_text{
 
                             display: flex;
                             justify-content: space-between;
-                            align-items: flex-end;
+                            flex-direction: column;
                             padding: 10px;
                             width: 100%;
                             
-
-                                &__titre{
-
-                                    h5{
+                                h5{
                                         font-size: 1.1em;
                                         margin-bottom: 5px;
                                     }
 
+                                &__bloc{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    transition: width 400ms ease-in-out;
+                                    
                                     h6{
                                         font-size: 0.9em;
                                         font-weight: normal;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        margin-right: 10px;;
                                     }
-                                }
 
-                                &__tarif{
-                                    
-                                    font-size: 0.9em;
-                                    font-weight: bold;
-                                    //padding-right: 10px;
-                                    transform-origin: right;
-                                    transform: translateX(60px);
-                                    transition: transform 400ms ease-in-out;  
+                                    &--tarif{
+                                
+                                        font-size: 0.9em;
+                                        font-weight: bold;
+                                        margin-right: 1vh;
+                                    }
                                 }
                             }
 
                         .plat_icon{
+                             
                             background: $colour-accent;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 80px;
-                            overflow: hidden;
+                            width: 70px;
+                            height: 100%;
                             transform-origin: right;
-                            transform: translateX(80px);
+                            transform: translateX(70px);
                             transition: transform 400ms ease-in-out;
-                            margin-left: 5px;
+                            position: absolute;
+                            right: 0;
 
                             i{
                                 display: inline-block;
