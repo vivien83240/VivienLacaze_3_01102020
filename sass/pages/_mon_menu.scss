@@ -46,84 +46,95 @@ section.img-banner{
                 width: 40px;
             }
 
-            &__plat{
-                display: flex;
-                justify-content: space-between;
-                background: $colour-white;
-                border-radius: 15px;
-                box-shadow: 0px 3px 10px rgb(226, 225, 225);
-                //padding: 10px;
-                margin-bottom: 15px;
-                cursor: pointer;
-                overflow: hidden;
-
-                /*:hover + .plat_icon{
-
-                    transform: scaleX(1);
-               
-
-                    i{
-                        transform: translateX(0) rotate(0turn);
-                        
-                    }*/
-
-            
-                }
+            &__ctn{
                   
-
-                .plat_text{
-                    padding: 10px;
-                    width: 100%;
-
-                    h5{
-                    font-size: 1.1em;
-                    margin-bottom: 5px;
-                    }
-
-                    &__tarif{
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding-right: 20px;
-
-                        h6{
-                            font-size: 0.9em;
-                            font-weight: normal;
-                        }
-
-                        p{
-                            font-size: 0.9em;
-                            font-weight: bold;
-                            padding-right: 10px;
-                        }
-                    }
-                }
-
-                /*.plat_icon{
-                    background: $colour-accent;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 80px;
-                    border-radius: 0 15px 15px 0;
+                .plat{
+                    
+                    background: $colour-white;
+                    border-radius: 15px;
+                    box-shadow: 0px 3px 10px rgb(226, 225, 225);
+                    margin-bottom: 15px;
+                    cursor: pointer;
                     overflow: hidden;
-
-                    transform-origin: right;
-                    transform: scaleX(0);
-                    transition: transform 500ms ease-in-out;
                     
-
-                    i{
-                        display: inline-block;
-                        color: $colour-white;
-                        font-size: 1.4em;
-                        transform: translateX(250%) rotate(-1turn);
-                        
-                        transition: transform 500ms ease-out;
-                    
+                    &:hover{
+    
+                       .plat_icon{
+    
+                        transform: translateX(0);
+    
+                            i{
+                                transform: rotate(0turn);
+                                
+                            }
+                        }
+    
+                        .plat_text__tarif{
+                            transform: translateX(0);
+                        }
                     }
+            
+                    ul{
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        .plat_text{
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            padding: 10px;
+                            width: 100%;
+                            
+
+                                &__titre{
+
+                                    h5{
+                                        font-size: 1.1em;
+                                        margin-bottom: 5px;
+                                    }
+
+                                    h6{
+                                        font-size: 0.9em;
+                                        font-weight: normal;
+                                    }
+                                }
+
+                                &__tarif{
+                                    
+                                    font-size: 0.9em;
+                                    font-weight: bold;
+                                    //padding-right: 10px;
+                                    transform-origin: right;
+                                    transform: translateX(60px);
+                                    transition: transform 400ms ease-in-out;  
+                                }
+                            }
+
+                        .plat_icon{
+                            background: $colour-accent;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 80px;
+                            overflow: hidden;
+                            transform-origin: right;
+                            transform: translateX(80px);
+                            transition: transform 400ms ease-in-out;
+                            margin-left: 5px;
+
+                            i{
+                                display: inline-block;
+                                color: $colour-white;
+                                font-size: 1.4em;
+                                transform: rotate(-1turn);
+                                transition: transform 400ms ease-in;
+                            }
+                        }
+                    } 
                 }
-            }*/
+            }
         }
 
     &__btn{
@@ -134,22 +145,3 @@ section.img-banner{
 }
 
 
-@keyframes progress-fond-icon{
-    0% {
-        transform: scaleX(0);  
-    }
-    
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes progress-icon{
-    0% {
-        transform: translateX(0);  
-    }
-    
-    100% {
-        transform: translateX(1);
-    }
-}
