@@ -35,8 +35,9 @@ section.img-banner{
         margin: 0 15px 0 15px;
     }
 
-        .menu_entrees{
+        .menu_entrees,.menu_plats,.menu_desserts{
             width: 100%;
+            padding-bottom: 25px;
 
             h4{
                 font-weight: normal;
@@ -45,8 +46,8 @@ section.img-banner{
                 padding-bottom: 5px;
                 width: 40px;
             }
-
-            &__ctn{
+        }
+            /*&__ctn{*/
                   
                 .plat{
                     position: relative;
@@ -68,8 +69,8 @@ section.img-banner{
                             }
                         }
 
-                        .plat_text__bloc{
-                            width: 80%;
+                        .plat_text{
+                            width: 75%;
                         }
                     }
             
@@ -85,17 +86,21 @@ section.img-banner{
                             flex-direction: column;
                             padding: 10px;
                             width: 100%;
+                            transition: width 450ms ease-in-out;
                             
                                 h5{
                                         font-size: 1.1em;
                                         margin-bottom: 5px;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
                                     }
 
                                 &__bloc{
                                     display: flex;
                                     justify-content: space-between;
                                     width: 100%;
-                                    transition: width 400ms ease-in-out;
+                                    //transition: width 400ms ease-in-out;
                                     
                                     h6{
                                         font-size: 0.9em;
@@ -103,7 +108,7 @@ section.img-banner{
                                         text-overflow: ellipsis;
                                         white-space: nowrap;
                                         overflow: hidden;
-                                        margin-right: 10px;;
+                                        padding-right: 10px;
                                     }
 
                                     &--tarif{
@@ -125,7 +130,7 @@ section.img-banner{
                             height: 100%;
                             transform-origin: right;
                             transform: translateX(8.5vh);
-                            transition: transform 400ms ease-in-out;
+                            transition: transform 450ms ease-in-out;
                             position: absolute;
                             right: 0;
 
@@ -134,17 +139,16 @@ section.img-banner{
                                 color: $colour-white;
                                 font-size: 1.4em;
                                 transform: rotate(-1turn);
-                                transition: transform 400ms ease-in;
+                                transition: transform 450ms ease-in;
                             }
                         }
                     } 
                 }
-            }
-        }
+            
 
     &__btn{
         text-align: center;
-        margin-top: 40px;   
+        margin-top: 10px;   
     }
 
 }
