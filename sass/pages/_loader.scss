@@ -5,12 +5,12 @@
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 12;
-    
+    animation: loader_transition 2500ms forwards;
 
     &__text{
         
@@ -21,6 +21,20 @@
         animation: loader 1000ms both infinite;
     }
 }
+
+
+@keyframes loader_transition {
+    0% {
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 
 @keyframes loader {
@@ -46,3 +60,4 @@
     transform: scale3d(1, 1, 1);
     }
 }
+
