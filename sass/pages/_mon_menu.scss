@@ -47,7 +47,7 @@ section.img-banner{
                 width: 40px;
             }
         }
-            /*&__ctn{*/
+            &__ctn{
                   
                 .plat{
                     position: relative;
@@ -57,6 +57,13 @@ section.img-banner{
                     margin-bottom: 15px;
                     cursor: pointer;
                     overflow: hidden;
+                    animation: plat 1500ms backwards;
+                    
+                    @for $i from 1 through 10 {
+                        &--#{$i} {
+                            animation-delay: (1500ms / 10) * $i;
+                        }
+                    }
                     
                     &:hover{
     
@@ -70,7 +77,7 @@ section.img-banner{
                         }
 
                         .plat_text{
-                            width: 78%;
+                            width: 79%;
                         }
                     }
             
@@ -144,7 +151,7 @@ section.img-banner{
                         }
                     } 
                 }
-            
+            }
 
     &__btn{
         text-align: center;
@@ -153,4 +160,15 @@ section.img-banner{
 
 }
 
+
+@keyframes plat {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
 
