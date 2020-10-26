@@ -30,7 +30,7 @@ section.img-banner{
             justify-content: center;
         }
         @include desktop-only{
-            padding: 60px 0 100px 0;
+            padding: 60px 0 90px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -47,7 +47,7 @@ section.img-banner{
                 width: 70%;
             }
             @include desktop-only{               
-                margin: 0 0px 60px 0;
+                margin: 0 0px 50px 0;
                 justify-content: center;
             }
 
