@@ -13,7 +13,7 @@ address{
 
 .presentation{
     text-align: center;
-    background: $colour-lightgrey;
+    background: $colour-lightgray;
     padding: 40px 20px 60px 20px;
 
     h1{
@@ -32,6 +32,13 @@ address{
     flex-direction: column;
     padding: 50px 0 35px 0;
 
+        @include tablet-only{
+            align-items: center;
+        }
+        @include desktop-only{
+            align-items: center;
+        }
+
     h2{
         margin: 0 20px 25px 20px
     }
@@ -44,6 +51,14 @@ address{
 
         @include bloc-mods($bloc-mods);
 
+            @include tablet-only{
+                width: 50%;
+            }
+            @include desktop-only{
+                flex-direction: row;
+                width: 85%;
+            }
+
 
         li{
             display: flex;
@@ -53,6 +68,11 @@ address{
             box-shadow: 0px 3px 10px rgb(226, 225, 225);
             padding: 25px 0 25px 0;
             margin-bottom: 25px;
+                @include desktop-only{
+                    &:not(:last-child) {
+                        margin-right: 60px;
+                    }
+                }
 
             p{
                 background: $colour-primary;
@@ -85,9 +105,17 @@ address{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: $colour-lightgrey;
+    background: $colour-lightgray;
     width: 100%;
     padding: 50px 0 35px 0;
+
+        @include tablet-only{
+            align-items: center;
+        }
+        @include desktop-only{
+            align-items: center;
+            padding: 60px 0 70px 0;
+        }
 
     h2{
         margin: 0 20px 25px 20px;
@@ -99,6 +127,16 @@ address{
     flex-direction: column;
     justify-content: center;
     margin: 0 20px 0 20px;
+
+        @include tablet-only{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @include desktop-only{
+            flex-direction: row;
+            justify-content: space-around;
+        }
    
     > li{
         display: flex;
@@ -111,6 +149,13 @@ address{
         box-shadow: 0px 1px 10px silver;
         margin-bottom: 20px;
         position: relative;
+
+            @include tablet-only{
+                width: 45%;
+            }
+            @include desktop-only{
+                width: 22%;
+            }
 
         a{
             display: flex;

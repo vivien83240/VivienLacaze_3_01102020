@@ -1,5 +1,5 @@
 $bloc-mods: (
-    lightgrey: $colour-lightgrey,
+    lightgray: $colour-lightgray,
     lightpurple: lighten($colour-primary, 35%)
 );
 
@@ -8,5 +8,19 @@ $bloc-mods: (
         &--#{$mod} {
             background: $val;
         }
+    }
+}
+
+
+
+@mixin tablet-only {
+    @media (min-width: 600px) and (max-width: 1199px){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media (min-width: 1200px){
+        @content;
     }
 }

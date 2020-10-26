@@ -2,42 +2,100 @@ section.img-banner{
     width: 100%;
     height: 300px;
     overflow: hidden;
+        @include tablet-only{
+            height: 400px;
+        }
+        @include desktop-only{
+            height: 400px;
+        }
 
     img{
         width: 110%;
+            @include desktop-only{
+                width: 100%;
+            }
     }
 }
 
 .menu{
     width: 100%;
-    background: $colour-lightgrey;
+    background: $colour-lightgray;
     border-radius: 35px 35px 0 0;
     margin: -80px 0 0 0;
     padding: 35px 0 70px 0;
     position: relative;
+        @include tablet-only{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @include desktop-only{
+            padding: 60px 0 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
 
+    
     &__title{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 30px 30px 20px;
+            @include tablet-only{
+                width: 70%;
+            }
+            @include desktop-only{               
+                margin: 0 0px 60px 0;
+                justify-content: center;
+            }
 
             h1{
             font-family: 'shrikhand', Arial, sans-serif;
             font-size: 1.7em;
             font-weight: normal;
+                @include desktop-only{
+                    font-size: 2.5em;
+                    margin-right: 30px;
+                }
             }
-
     }
     
     &__ctn{
 
         margin: 0 15px 0 15px;
+            @include tablet-only{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            @include desktop-only{
+                width: 95%;
+            }
+
+
+        > ul{
+
+            @include tablet-only{
+                width: 70%;
+            }
+            @include desktop-only{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
 
         .menu_entrees,.menu_plats,.menu_desserts{
             width: 100%;
             padding-bottom: 25px;
+                @include desktop-only{
+                    width: 30%;
+                }
 
             h4{
                 font-weight: normal;
@@ -68,23 +126,28 @@ section.img-banner{
                     &:hover{
     
                        .plat_icon{
+                            transform: translateX(0);
     
-                        transform: translateX(0);
-    
-                            i{
-                                transform: rotate(0turn);
-                            }
+                                i{
+                                    transform: rotate(0turn);
+                                }
                         }
 
                         .plat_text{
                             width: 79%;
+
+                                @include tablet-only {
+                                    width: 50vw;
+                                }
+                                @include desktop-only {
+                                    width: 81%;
+                                }
                         }
                     }
             
                     ul{
                         display: flex;
                         justify-content: space-between;
-                        
 
                         .plat_text{
 
@@ -140,6 +203,10 @@ section.img-banner{
                             transition: transform 450ms ease-in-out;
                             position: absolute;
                             right: 0;
+                                @include desktop-only {
+                                    width: 65px;
+                                    transform: translateX(65px);
+                                }
 
                             i{
                                 display: inline-block;
