@@ -20,7 +20,7 @@ $bloc-mods: (
 }
 
 @mixin desktop-only {
-    @media (min-width: 1200px){
+    @media (min-width: 1199px){
         @content;
     }
 }
